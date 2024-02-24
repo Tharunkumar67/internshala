@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Images</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // Replace this JSON structure with your actual data
+    const imageData = [
+        { "image": "image-url-1" },
+        { "image": "image-url-2" },
+        { "image": "image-url-3" },
+        { "image": "image-url-4" },
+        { "image": "image-url-5" },
+        { "image": "image-url-6" },
+        { "image": "image-url-7" },
+        { "image": "image-url-8" },
+        { "image": "image-url-9" },
+        { "image": "image-url-10" },
+        { "image": "image-url-11" },
+        { "image": "image-url-12" },
+        { "image": "image-url-13" },
+        { "image": "image-url-14" },
+        { "image": "image-url-15" },
+        { "image": "image-url-16" },
+        { "image": "image-url-17" },
+        { "image": "-image-url-18" },
+        { "image": "image-url-19" },
+        { "image": "image-url-20" },
+        { "image": "image-url-21" },
+        { "image": "image-url-22" },
+        { "image": "image-url-23" },
+        { "image": "image-url-24" },
+        { "image": "image-url-25" },  
+
+
+    ];
+
+    function loadImages() {
+        const container = document.body;
+
+        imageData.forEach(item => {
+            const imgElement = document.createElement('img');
+            imgElement.src = item.image;
+            container.appendChild(imgElement);
+        });
+    }
+
+    window.onload = loadImages;
+</script>
+
+</body>
+</html>
